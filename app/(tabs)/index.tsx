@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import { NetflixIcon } from '@/constants/Icons'
 
@@ -12,3 +12,7 @@ const Pages = () => {
 }
 
 export default Pages
+
+const style = StyleSheet.create({
+  
+})
