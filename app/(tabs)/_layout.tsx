@@ -20,7 +20,6 @@ const Layout = () => {
             marginHorizontal: 120,
             paddingHorizontal: 10,
             paddingVertical: 8,
-            paddingBottom: 8,
             borderRadius: 40,
             borderWidth: 1,
             borderTopWidth: 1,
@@ -43,7 +42,7 @@ const Layout = () => {
                   backgroundColor: focused ? Colors.tintColor : Colors.grey,
                 }}
               >
-                <SimpleLineIcons name="pie-chart" size={18} color={color} />
+                <SimpleLineIcons name="pie-chart" size={24} color={color} />
               </View>
             ),
           }}
@@ -59,7 +58,7 @@ const Layout = () => {
                   backgroundColor: focused ? Colors.tintColor : Colors.grey,
                 }}
               >
-                <AntDesign name="swap" size={18} color={color} />
+                <AntDesign name="swap" size={24} color={color} />
               </View>
             ),
           }}
@@ -75,7 +74,7 @@ const Layout = () => {
                   backgroundColor: focused ? Colors.tintColor : Colors.grey,
                 }}
               >
-                <FontAwesome name="user-o" size={18} color={color} />
+                <FontAwesome name="user-o" size={24} color={color} />
               </View>
             ),
           }}

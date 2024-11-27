@@ -1,18 +1,23 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import { NetflixIcon } from '@/constants/Icons'
+ 
+import Colors from '@/constants/Colors'
 
 const Pages = () => {
   return (
-    <View>
+    <View style={style.container}>
       <Text>Pages</Text>
-      {/* <NetflixIcon width={22} height={22} color={'#000'} /> */}
     </View>
   )
-}
+} 
 
 export default Pages
 
 const style = StyleSheet.create({
-  
+   container: {
+    flex: 1,
+    backgroundColor: Colors.black,
+    paddingHorizontal: 20,
+   }
+
 })
