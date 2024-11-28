@@ -13,9 +13,14 @@ const Pages = () => {
           header: () => <Header />,  
         }}
       />
-      <View style={[styles.container, {paddingTop:40}]}>
+      <View style={[styles.container, {paddingTop:50}]}>
          <ScrollView showsVerticalScrollIndicator={false}>
-              <Text style={{color:Colors.white}}>My Expenses</Text>
+              <View style={{gap: 10}}>
+                <Text style={{color:Colors.white, fontSize: 16}}>
+                   My <Text style={{fontWeight:700}}>Expenses</Text> 
+                </Text>
+                <Text style={{color:Colors.white, fontSize:36, fontWeight:700}}>$2000.<Text style={{fontSize:22, fontWeight:400 }}>00</Text></Text>
+              </View>
          </ScrollView>
       </View>
     </>
