@@ -32,8 +32,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Center content vertically
     alignItems: 'center',    // Center content horizontally
   },
-  text: {
-    color: Colors.white,
-    fontSize: 18, // Optional: Adjust font size
-  },
+  
 });
