@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { ExpenseType } from "@/types";
 
-const ExpenseBlock = () => {
+
+const ExpenseBlock = ({ expenseList }: { expenseList: ExpenseType[] }) => {
   return (
     <View>
       <Text>ExpenseBlock</Text>

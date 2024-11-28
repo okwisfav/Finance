@@ -5,6 +5,7 @@ import { Stack } from 'expo-router';
 import Header from '@/components/Header';
 import { PieChart } from "react-native-gifted-charts";
 import ExpenseBlock from '@/components/ExpenseBlock';
+import ExpesList from '@/data/expenses.json'
 
 const Pages = () => {
   const pieData = [
@@ -75,7 +76,7 @@ const Pages = () => {
               />
               </View>
             </View>
-            <ExpenseBlock />
+            <ExpenseBlock expenseList={ExpesList} />
          </ScrollView>
       </View>
     </>
