@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import Colors from '@/constants/Colors'; // Ensure the path to Colors is correct or define it inline
+import Colors from '@/constants/Colors'; 
 import { Stack } from 'expo-router';
 import Header from '@/components/Header';
  
@@ -10,7 +10,7 @@ const Pages = () => {
     <>
       <Stack.Screen
         options={{
-          header: () => <Header />, // Replace with your custom header if needed
+          header: () => <Header />,  
         }}
       />
       <View style={[styles.container, {paddingTop:40}]}>
@@ -29,8 +29,5 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.black,
     paddingHorizontal: 20,
-    justifyContent: 'center', // Center content vertically
-    alignItems: 'center',    // Center content horizontally
   },
-  
 });
