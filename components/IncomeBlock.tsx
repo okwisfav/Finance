@@ -1,10 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { FlatList, ListRenderItem, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import Colors from '@/constants/Colors'
+import { IncomeType } from '@/types'
 
-const IncomeBlock = () => {
+const IncomeBlock = ({ incomeList }: { incomeList: IncomeType[] }) => {
+   const renderItem:ListRenderItem<IncomeType> = ({item}) => {
+     return(
+       <View>
+           <Text style={{color:Colors.white}}>{item.name}</Text>
+       </View>
+     );
+   } 
   return (
     <View>
-      <Text>IncomeBlock</Text>
+      <Text style={{color:Colors.white,fontSize: 16,}}>IncomeBlock</Text>
+      <FlatList data={incomeList} renderItem={renderItem} horizontal showsHorizontalScrollIndicator={false}/>
     </View>
   )
 }
