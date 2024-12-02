@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import Colors from '@/constants/Colors'
+import { SpendingType } from '@/types'
 
 const SpendingBlock = ({ spendingList }: { spendingList: SpendingType[] }) => {
   return (
