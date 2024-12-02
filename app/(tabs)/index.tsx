@@ -8,6 +8,8 @@ import ExpenseBlock from '@/components/ExpenseBlock';
 import ExpesList from '@/data/expenses.json'
 import incomeList from '@/data/income.json';
 import IncomeBlock from "@/components/IncomeBlock";
+import SpendingBlock from '@/components/SpendingBlock';
+import spendingList from '@/data/spending.json';
 const Pages = () => {
   const pieData = [
     {
@@ -79,6 +81,7 @@ const Pages = () => {
             </View>
             <ExpenseBlock expenseList={ExpesList} />
             <IncomeBlock incomeList={incomeList} />
+            <SpendingBlock spendingList={spendingList} />
          </ScrollView>
       </View>
     </>

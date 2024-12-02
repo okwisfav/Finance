@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import Colors from '@/constants/Colors'
 
-const SpendingBlock = () => {
+const SpendingBlock = ({ spendingList }: { spendingList: SpendingType[] }) => {
   return (
-    <View>
-      <Text>SpendingBlock</Text>
+    <View style={{marginVertical: 20, alignItems: 'flex-start'}}>
+      <Text style={{color:Colors.white,fontSize:16,fontWeight: "700" }}>july Spending</Text>
     </View>
   )
 }
